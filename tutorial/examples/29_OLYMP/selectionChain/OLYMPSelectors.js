@@ -27,13 +27,16 @@ var classes = {
                 slice: mustBeDefined,
             },
             children: {
-                dimensionSelector: { description: {
+                /*rightFacetSelectorPane: { description: {
                     "class": "OLYMPSidePanelDimensionSelector",
                     context: {
                         initialWidth: 300,
                     }
+                }},*/
+                rightFacetSelectorPane: { description: {
+                    "class": "OLYMPFacetSelectorSidePanel",
                 }},
-                facetSelectors: { description: {
+                leftFacetSelectorPane: { description: {
                     "class": "OLYMPFacetSelectorSidePanel",
                 }}
             }

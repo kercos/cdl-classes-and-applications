@@ -41,13 +41,13 @@ var classes = {
                 slice: mustBeDefined,
             },
             children: {
-                dimensionSelector: { description: {
+                rightFacetSelectorPane: { description: {
                     "class": "ESIFSidePanelDimensionSelector",
                     context: {
                         initialWidth: 300,
                     }
                 }},
-                facetSelectors: { description: {
+                leftFacetSelectorPane: { description: {
                     "class": "ESIFFacetSelectorSidePanel",
                 }}
             }

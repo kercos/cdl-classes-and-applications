@@ -111,7 +111,7 @@ var classes = {
             bottom: 0,
             facetSelectorLeftOfView: {
                 point1: { type: "right",
-                          element: [{ children: { facetSelectors: _ }}, [me]] },
+                          element: [{ children: { leftFacetSelectorPane: _ }}, [me]] },
                 point2: { type: "left",
                           element: [{ children: { view: _ }}, [embedding]] },
                 equals: 0
@@ -119,7 +119,7 @@ var classes = {
             dimensionSelectorRightOfView: {
                 point1: { type: "left",
                           element: [
-                              { children: { dimensionSelector: _ }}, [me]] },
+                              { children: { rightFacetSelectorPane: _ }}, [me]] },
                 point2: { type: "right",
                           element: [{ children: { view: _ }}, [embedding]] },
                 equals: 0
@@ -129,7 +129,7 @@ var classes = {
                 point1: { type: "right", element: [embedding] },
                 point2: { type: "right",
                           element: [
-                              { children: { dimensionSelector: _ }}, [me]] },
+                              { children: { rightFacetSelectorPane: _ }}, [me]] },
                 
                 equals: [{ dimensionSelectorHide: _ }, [me]],
             },
@@ -137,7 +137,7 @@ var classes = {
             showFacetSelectors: {
                 point1: { type: "left",
                           element: [
-                              { children: { facetSelectors: _ }}, [me]] },
+                              { children: { leftFacetSelectorPane: _ }}, [me]] },
                 point2: { type: "left", element: [embedding] },
                 equals: [{ facetSelectorHide: _ }, [me]]
             }
@@ -155,10 +155,10 @@ var classes = {
                 [offset,
                  { type: "left",
                    element: [
-                       { children: { dimensionSelector: _ }}, [me]] },
+                       { children: { rightFacetSelectorPane: _ }}, [me]] },
                  { type: "right",
                    element: [
-                       { children: { dimensionSelector: _ }}, [me]] },
+                       { children: { rightFacetSelectorPane: _ }}, [me]] },
                  
                 ]],
             facetSelectorHide: [
@@ -167,10 +167,10 @@ var classes = {
                 [offset,
                  { type: "left",
                    element: [
-                       { children: { facetSelectors: _ }}, [me]] },
+                       { children: { leftFacetSelectorPane: _ }}, [me]] },
                  { type: "right",
                    element: [
-                       { children: { facetSelectors: _ }}, [me]] }]]
+                       { children: { leftFacetSelectorPane: _ }}, [me]] }]]
         }
     },{
         // a slice is being edited
@@ -185,10 +185,10 @@ var classes = {
                 [offset,
                  { type: "left",
                    element: [
-                       { children: { dimensionSelector: _ }}, [me]] },
+                       { children: { rightFacetSelectorPane: _ }}, [me]] },
                  { type: "right",
                    element: [
-                       { children: { dimensionSelector: _ }}, [me]] },
+                       { children: { rightFacetSelectorPane: _ }}, [me]] },
                  
                 ]],
             facetSelectorHide: [
@@ -197,10 +197,10 @@ var classes = {
                 [offset,
                  { type: "left",
                    element: [
-                       { children: { facetSelectors: _ }}, [me]] },
+                       { children: { leftFacetSelectorPane: _ }}, [me]] },
                  { type: "right",
                    element: [
-                       { children: { facetSelectors: _ }}, [me]] }]]
+                       { children: { leftFacetSelectorPane: _ }}, [me]] }]]
         }
     })
 };
